@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "152726357633",
+    "firebase_url": "https://chatingapp-a07e9.firebaseio.com",
+    "project_id": "chatingapp-a07e9",
+    "storage_bucket": "chatingapp-a07e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152726357633:android:fdc1cd6ddecb8a1a",
+        "android_client_info": {
+          "package_name": "com.example.mohamed.chattapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152726357633-1njk7lane1chhgqlecdltbru8t1cgqbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mohamed.chattapp",
+            "certificate_hash": "c6262975592e8344293d9b129d48c80e9ffdafbc"
+          }
+        },
+        {
+          "client_id": "152726357633-o69eolh4pt3i9vmti7dam9jcj2voh2ka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0F1_Zl9qf5GPsEZcKAUox-HQuHxm3Pbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152726357633-o69eolh4pt3i9vmti7dam9jcj2voh2ka.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
