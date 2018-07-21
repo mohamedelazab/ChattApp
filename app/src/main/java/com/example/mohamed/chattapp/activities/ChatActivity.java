@@ -23,8 +23,8 @@ import com.example.mohamed.chattapp.api.ApiClient;
 import com.example.mohamed.chattapp.api.ApiInterface;
 import com.example.mohamed.chattapp.model.MainResponse;
 import com.example.mohamed.chattapp.model.Message;
-import com.example.mohamed.chattapp.utils.Session;
 import com.example.mohamed.chattapp.utils.Constants;
+import com.example.mohamed.chattapp.utils.Session;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.ArrayList;
@@ -129,11 +129,14 @@ public class ChatActivity extends AppCompatActivity {
             public void onResponse(Call<List<Message>> call, Response<List<Message>> response) {
                 messages.clear();
                 messages =response.body();
-                messagingAdapter =null;
-                messagingAdapter =new MessagingAdapter(ChatActivity.this, messages);
-                rvChat.setAdapter(null);
-                rvChat.setAdapter(messagingAdapter);
-                Log.e("SIZE","size: "+messages.size() +" "+messages.get(0).getContent());
+                assert messages != null;
+                if (messages.size()>0) {
+                    messagingAdapter = null;
+                    messagingAdapter = new MessagingAdapter(ChatActivity.this, messages);
+                    rvChat.setAdapter(null);
+                    rvChat.setAdapter(messagingAdapter);
+                    Log.e("SIZE", "size: " + messages.size() + " " + messages.get(0).getContent());
+                }
             }
 
             @Override
